@@ -1,0 +1,197 @@
+* {
+    background-color: #0a1404;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;;
+}
+
+
+.navbar {
+    
+    backdrop-filter: blur(30px);
+    height: 50%;
+    padding: 1rem 0.1rem;
+    box-shadow: 0 0px 30px rgba(0,0,0,0.1);
+    
+    
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: none;
+    color: white;
+    text-decoration: none;
+    
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+    margin-right: 16rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.2px;
+}
+
+.nav-links a:hover {
+    color: #56c908;
+    transform: translateY(-1px);
+}
+
+.emergency-btn {
+    background-color: #030601;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.emergency-btn:hover {
+    background-color: #c53030;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    .emergency-btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+img{
+    
+    height: 8vh;
+    width: 5vw;
+}
+#alert{
+    border: 2px solid white;
+}
+#alert marquee{
+    color: rgb(240, 163, 81);
+}
+#alert span{
+    color: red;
+}
+#hero{
+    display: flex;
+    margin-top: 2rem;
+}
+#RecentDisasters{
+    padding: 2rem;
+    color: rgb(238, 227, 209);
+    font-size: 0.8rem;
+    line-height: 1rem;
+    list-style: decimal;
+    border: 2px solid rgb(223, 223, 8);
+    width: 100%;
+    margin: 0rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(222, 217, 217, 0.2);
+
+    
+}
+#RecentDisasters h2{
+    padding-bottom: 1rem;
+
+}
+#RecentDisasters li{
+    padding-bottom: 0.8rem;
+}
+#OurInfo{
+    color: white;
+    padding: 1rem;
+    align-items: center;
+
+}
+#OurInfo p{
+    line-height: 160%;
+}
+#CommonDisasters{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding-top: 3rem;
+}
+#CommonDisasters h1{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+#CommonDisasters img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5 5px 30px rgba(254, 253, 253, 0.1);
+    
+}
+.newevents{
+    display: flex;
+    padding: 20px 15px;
+    border-bottom: 1px solid white;
+    
+}
+.neweventsphoto{
+    
+    width: 50%;
+    height: 100%;
+    padding: 0px 5rem;
+    
+}
+.neweventsinfo{
+    width: 50%;
+    justify-content: center;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+.Readmore{
+    color: aqua;
+    display: block;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    padding-top: 2rem;
+    
+}
+.Readmore:hover{
+    color: rgb(233, 215, 25);
+}

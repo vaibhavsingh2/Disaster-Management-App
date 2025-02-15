@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>Donation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            width: 50%;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .previous-donations {
+            text-align: right;
+            font-size: 16px;
+            margin-top: 10px;
+            display: none;
+        }
+        .image-box {
+            margin-top: 20px;
+        }
+        .donation-box {
+            margin-top: 20px;
+        }
+        .qr-box {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #555;
+            background: #2e2e2e;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .qr-box img {
+            width: 200px;
+        }
+        .previous-disasters {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #555;
+            background: #2e2e2e;
+            color: white;
+            border-radius: 5px;
+            width: 100px;
+        }
+
+        .navbar {
+            backdrop-filter: blur(30px);
+            height: 50%;
+            padding: 1rem 0.1rem;
+            box-shadow: 0 0px 30px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: none;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-right: 16rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.2px;
+        }
+
+        .nav-links a:hover {
+            color: #56c908;
+            transform: translateY(-1px);
+        }
+
+        .emergency-btn {
+            background-color: #030601;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            border: none;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .emergency-btn:hover {
+            background-color: #c53030;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+
+    <script>
+        function showQR() {
+            document.getElementById('qr-box').style.display = 'block';
+        }
+        function showdonations() {
+            var donationBox = document.getElementById('previous-donations');
+            if (donationBox.style.display === 'none' || donationBox.style.display === '') {
+                donationBox.style.display = 'block';
+            } else {
+                donationBox.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="" class="logo">
+                ResQAid
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="https://vaibhavsingh24100.pythonanywhere.com/announcements/">Announcement</a></li>
+                <li><a href="./donation.html">Contribute</a></li>
+                <li><a href="./location.html">Live Location Tracking</a></li>
+                <button class="emergency-btn" onclick="window.location.href='emergency.html'">Emergency Help</button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <span>Donation</span>
+            <button onclick="showdonations()">Previous Donations</button>
+        </div>
+        <div id='previous-donations' class="previous-donations">
+            <p>Rupees 100 by Vaibhav Singh</p>
+        </div>
+        <div class="image-box">
+            <p><strong>Tropic Cyclone Dikeledi</strong></p>
+            <img src="https://i.guim.co.uk/img/media/03cd4e917ad0594cc05aba15e35c70c9898cbb0a/0_203_4160_2496/master/4160.jpg?width=1200&quality=85&auto=format&fit=max&s=4af1044f2563ef811858652cddfbab78" alt="Tropic Cyclone Dikeledi" width="100%">
+        </div>
+        <div class="donation-box">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <button onclick="showQR()">Submit</button>
+        </div>
+        <div id="qr-box" class="qr-box">
+            <p><strong>Scan This Through PhonePe:</strong></p>
+            <img src="code.jpeg" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
