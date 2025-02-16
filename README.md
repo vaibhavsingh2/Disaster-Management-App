@@ -16,7 +16,7 @@ Through this project, we aimed to bridge the gaps in disaster relief efforts, en
 
 2) To ensure the authenticity and reliability of information, we have restricted the ability to add announcements solely to the government authorities, while the general public can only view the updates published by them. This guarantees that all announcements remain credible and authoritative.
 
-However, in cases where duplicate entries, accidental additions, or unauthorized modifications occur—whether due to human error or malicious activity—we have implemented a dedicated admin page. This page, accessible only to us, allows for the swift removal of any incorrect or misleading disaster reports, ensuring that the platform maintains accuracy and integrity at all times.
+  However, in cases where duplicate entries, accidental additions, or unauthorized modifications occur—whether due to human error or malicious activity—we have implemented a dedicated admin page. This page, accessible only to us, allows for the swift removal of any incorrect or misleading disaster reports, ensuring that the platform maintains accuracy and integrity at all times.
 
 3) We have designed a Contribute Page where users can support disaster-affected individuals through donations. When a picture of a disaster is posted, it signifies that all funds collected during that time will be directed toward aiding those injured in the calamity.
 
