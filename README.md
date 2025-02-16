@@ -16,15 +16,15 @@ Through this project, we aimed to bridge the gaps in disaster relief efforts, en
 
 2) To ensure the authenticity and reliability of information, we have restricted the ability to add announcements solely to the government authorities, while the general public can only view the updates published by them. This guarantees that all announcements remain credible and authoritative.
 
-  However, in cases where duplicate entries, accidental additions, or unauthorized modifications occur—whether due to human error or malicious activity—we have implemented a dedicated admin page. This page, accessible only to us, allows for the swift removal of any incorrect or misleading disaster reports, ensuring that the platform maintains accuracy and integrity at all times.
+  However, in cases where duplicate entries, accidental additions, or unauthorized modifications occur—whether due to human error or malicious activity—we have implemented a   dedicated admin page. This page, accessible only to us, allows for the swift removal of any incorrect or misleading disaster reports, ensuring that the platform maintains    accuracy and integrity at all times.
 
 3) We have designed a Contribute Page where users can support disaster-affected individuals through donations. When a picture of a disaster is posted, it signifies that all funds collected during that time will be directed toward aiding those injured in the calamity.
 
-To honor and appreciate the generosity of contributors, we also maintain a donor recognition system, displaying the names of those who have extended their support. This not only fosters transparency and trust but also encourages a sense of community and shared responsibility in times of crisis.
+  To honor and appreciate the generosity of contributors, we also maintain a donor recognition system, displaying the names of those who have extended their support. This      not only fosters transparency and trust but also encourages a sense of community and shared responsibility in times of crisis.
 
 4) We have developed a Live Location Tracking Page that utilizes the Geolocation API to determine a user’s precise longitude and latitude in real time. This system continuously monitors disaster occurrences within a ±5-degree radius of the user's location.
 
-If the platform detects 100 or more disasters within this range, the default "Safe Zone" status will automatically switch to "Unsafe Zone" for all individuals in that area. This feature enables proactive awareness, helping communities stay informed and take necessary precautions when disaster risks escalate.
+  If the platform detects 100 or more disasters within this range, the default "Safe Zone" status will automatically switch to "Unsafe Zone" for all individuals in that        area. This feature enables proactive awareness, helping communities stay informed and take necessary precautions when disaster risks escalate.
 
 
 
